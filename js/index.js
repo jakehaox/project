@@ -213,7 +213,7 @@
 				html += '	</a>';
 				html += '</li>';
 			}
-		}else if (index == 1 || index == 2 || index == 4 || index == 5) {
+		}else{
 			// console.log('bb');
 			for (var i = 0; i < data.length; i++) {
 				html += '<li>';
