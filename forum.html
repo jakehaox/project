@@ -12,12 +12,6 @@
 	<link rel="stylesheet" href="css/forum-common.css">
 	<link rel="stylesheet" href="css/forum.css">
 <body>
-	<!--
-	 页面布局：
-	上
-	中（banner content)
-	下
-	 -->
 	<div class="header">
 		<div class="header-main">
 			<div class="container clearfix">
@@ -25,9 +19,9 @@
 					<a href="javascript:;">锤子科技官方论坛</a>
 				</h1>
 				<div class="user">
-					<span class="xi2">登陆</span>
-					<span class="sep">|</span>
-					<span class="xi2">注册</span>
+					<a href="#"><span class="xi2">登陆</span></a>
+					<span class="sep"></span>
+					<a href="#"><span class="xi2">注册</span></a>
 				</div>
 				<ul class="header-menu">
 					<li><a href="#">论坛首页</a></li>
@@ -60,22 +54,21 @@
 	</div>
 	<div class="main">
 		<div class="container">
-			<div class="carousel">
-				<ul>
+			<div class="carousel" id="box1">
+				<!-- <ul>
 					<li class="carousel-item"><a href="javascript:;"><img class="carousel-img" src="images/forum-b1.png" alt=""></a></li>
 					<li class="carousel-item"><a href="javascript:;"><img src="images/forum-b2.jpg" alt=""></a></li>
 				</ul>
 				<ul class="carousel-btn">
 					<li></li>
-					<!-- <li></li> -->
-				</ul>
+				</ul> -->
 			</div>
-			<div class="content">
+			<div class="content clearfix">
 				<div class="left"><!-- 精品+热帖 -->
-					<div class="foldbleBox" id="fold-hide"><!-- h3+content-section+more -->
+					<div class="foldbleBox"><!-- h3+content-section+more -->
 						<h3>
 							精品资讯
-							<span id="fold-btn"></span>
+							<span class="fold-btn" style="background-image: url('images/forum-line.png')"></span>
 						</h3>
 						<div class="content-section">
 							<div class="content-box">
@@ -186,13 +179,13 @@
 					<div class="foldbleBox">
 						<h3>
 							热帖推荐
-							<div class="fold-btn"></div>
+							<span class="fold-btn" style="background-image: url('images/forum-line.png')"></span>
 						</h3>
 						<div class="js-list">
 							<div class="discuss-box">
 								<div class="portrait">
 									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
+									<div class="avatar-level-icon"><img src="images/forum-disA.png" alt=""></div>
 								</div>
 								<div class="discuss-content">
 									<h5>
@@ -211,27 +204,7 @@
 							<div class="discuss-box">
 								<div class="portrait">
 									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-										<i class="iconfont">&#xe608;</i>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
+									<div class="avatar-level-icon"><img src="images/forum-disA.png" alt=""></div>
 								</div>
 								<div class="discuss-content">
 									<h5>
@@ -240,159 +213,7 @@
 										</a>
 									</h5>
 									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
-										<li class="time">发表于 2018-11-06 23:39:08</li>
-										<li class="review">88</li>
-										<li class="browse">19080</li>
-									</ul>
-								</div>
-							</div>
-							<div class="discuss-box">
-								<div class="portrait">
-									<a href="#"><img src="images/forum-dis1.jpg" alt=""></a>
-									<div class="avatar-level-icon"></div>
-								</div>
-								<div class="discuss-content">
-									<h5>
-										<a href="#">
-											超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器
-										</a>
-									</h5>
-									<ul class="post-info">
-										<li class="author"><a href="/?50">锤子科技</a></li>
+										<li class="author"><a href="#">锤子科技</a></li>
 										<li class="time">发表于 2018-11-06 23:39:08</li>
 										<li class="review">88</li>
 										<li class="browse">19080</li>
@@ -401,7 +222,7 @@
 							</div>
 						</div>
 						<div class="forum-list-pager">
-							<div class="pg">
+							<!-- <div class="pg">
 								<strong>1</strong>
 								<a href="javascript:;">2</a>
 								<a href="javascript:;">3</a>
@@ -410,7 +231,15 @@
 								<a href="javascript:;">...</a>
 								<a href="javascript:;">61</a>
 								<a href="javascript:;"><i class="iconfont">&#xe620;</i></a>
-							</div>
+							</div> -->
+							<ul class="pg">
+								<div class="pre" style="display: none"><</div>
+								<li class="pg-item active-pg"><a href="javascript:;">1</a></li>
+								<li class="pg-item"><a href="javascript:;">2</a></li>
+								<li class="pg-item"><a href="javascript:;">3</a></li>
+								<li class="pg-item"><a href="javascript:;">4</a></li>
+								<div class="nex">></div>
+							</ul>
 						</div>
 					</div>
 				</div><!-- left结尾 -->
@@ -665,6 +494,9 @@
 			</div>
 		</div>
 	</div>
+	<button class="back-top">返回顶部</button>
 </body>
+<script src="js/yuan-data.js"></script>
+<script src="js/yuan-util.js"></script>
 <script src="js/forum.js"></script>
 </html>
