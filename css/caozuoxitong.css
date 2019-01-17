@@ -119,6 +119,7 @@ li{
 }
 /* 导航栏部分*/
 .user-info{
+	width: 100%;
 	height: 40px;
 	background-color: #fdfdfc;
 	border-bottom: 1px solid gray;
@@ -533,5 +534,4 @@ li{
 	font-weight: 400;
 	color: #bdbdbd;
 }
-
 

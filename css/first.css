@@ -336,6 +336,7 @@ li{
 	padding-right: 6px;
 }
 .foot .foot-nav{
+	position: relative;
 	padding: 30px 0px 60px;
 }
 .foot .foot-nav .left-nav .bottom{
@@ -397,6 +398,75 @@ li{
 	font-size: 12px;
 	font-weight: 400;
 	color: #bdbdbd;
+}
+
+
+.foot .foot-nav .right-nav{
+	position: absolute;
+	top: -45px;
+	right: -15px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.foot .foot-nav .right-nav.active{
+	border: 1px solid #e5e5e5;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+.foot .foot-nav .right-nav .link{
+	display: block;
+	width: 118px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.foot .foot-nav .right-nav .link.active{
+	background-color: #f8f8f8;
+	border-top: 1px solid #e5e5e5;
+}
+.foot .foot-nav .right-nav .link div{
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	border: 1px solid #c4c4c4;
+	background-image: url(../images/hongxing.jpg);
+	background-repeat: no-repeat;
+	background-size: 16px 14px;
+	vertical-align: -2px;
+	margin-right: 6px;
+}
+.foot .foot-nav .right-nav .link span{
+	color: #45474b;
+	font-weight: 400;
+	margin-right: 18px;
+}
+.foot .foot-nav .right-nav .link i{
+	transition: all 0.3s linear;
+	font-size: 12px;
+	font-weight: 400;
+	color: #bdbdbd;
+}
+.foot .foot-nav .right-nav .ying{
+	visibility: hidden;
+	opacity: 0;
+	width: 118px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	transition: all 0.2s linear;
+}
+.foot .foot-nav .right-nav .ying div{
+	display: inline-block;
+	width: 16px;
+	height: 13px;
+	/*border: 1px solid #c4c4c4;*/
+	background-image: url(../images/yingqi.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px 17px;
+	vertical-align: -2px;
+	margin-right: 6px;
+	margin-left: -10px;
 }
 
 

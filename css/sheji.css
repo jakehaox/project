@@ -184,14 +184,15 @@ li{
     background-color: #003567;
     cursor: pointer;
 }
-.user-info .user-info-right .aa{
+.aa{
+	margin-top: -2px;
 	display: inline-block;
 	width: 1583px;
 	height: 948px;
 	background-repeat: no-repeat;
 }
-.user-info .user-info-right .bb{
-	margin-top: -2px;
+.bb{
+	margin-top: -3px;
 }
 .describe{
 	position: relative;
@@ -450,4 +451,9 @@ li{
 	font-weight: 400;
 	color: #bdbdbd;
 }
+
+
+
+
+
 

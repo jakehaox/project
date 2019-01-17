@@ -26,7 +26,6 @@
 var oUserInfo = document.getElementById('user-info');
 var oUserInfoRight = document.getElementById('user-info-right');
 window.onscroll = function(){
-	console.log(oUserInfo)
 	getScrollTop();
 	if(getScrollTop() >= 100){
 		oUserInfo.style.position = 'fixed';
@@ -38,8 +37,6 @@ window.onscroll = function(){
 	}
 }
 // 顶部导航购物车js
-window.onload = function(){
-	
 	var oLink = document.getElementById('link');
 	var oTankuang = document.getElementById('tankuang');
 	oLink.onmouseover = function(){
@@ -48,4 +45,32 @@ window.onload = function(){
 	oLink.onmouseout = function(){
 		oTankuang.style.display = 'none';
 	}
-}
+	
+
+// 底部锤子应用js
+	var oFootBox = document.querySelector('.foot .foot-nav .right-nav');
+	var oFootBtn = document.querySelector('.foot .foot-nav .right-nav .link i');
+	var oFootYing = document.querySelector('.foot .foot-nav .right-nav .ying');
+	var oFootZhong = document.querySelector('.foot .foot-nav .right-nav .link');
+	// console.log(oFootBox);
+	var isShow = false;
+	oFootBox.onclick = function(){
+		if (!isShow) {
+			oFootBox.className = 'right-nav active';
+			oFootBtn.style.transform = 'rotate(180deg)';
+			oFootYing.style.visibility = 'visible';
+			oFootYing.style.opacity = '1';
+			oFootZhong.className = 'link active';
+			isShow = true;
+		}else{
+			if (isShow) {
+				oFootBox.className = 'right-nav';
+				oFootBtn.style.transform = 'rotate(0deg)';
+				oFootYing.style.visibility = 'hidden';
+				oFootYing.style.opacity = '0';
+				oFootZhong.className = 'link';
+				isShow = false;
+			}
+		}
+		
+	}

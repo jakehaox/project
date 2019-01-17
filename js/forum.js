@@ -1,3 +1,28 @@
+//论坛版块
+boxForum();
+function boxForum(){
+	var hideTimer = 0;
+	var boxHeader = document.getElementById('box-header');
+	var headerContent = document.querySelector('.header-content');
+	boxHeader.onmouseenter = function(){
+		clearTimeout(hideTimer);
+		headerContent.style.display = 'block';
+	}
+	boxHeader.onmouseleave = function(){
+		hideTimer = setTimeout(function(){
+			headerContent.style.display = 'none';
+		},500)
+	}
+	headerContent.onmouseenter = function(){
+		clearTimeout(hideTimer);
+		headerContent.style.display = 'block';
+	}
+	headerContent.onmouseleave = function(){
+		hideTimer = setTimeout(function(){
+			headerContent.style.display = 'none';
+		},500)
+	}
+}
 //轮播图
 carousel();
 //加减
@@ -79,7 +104,6 @@ function handleList(){
 			//加载数据
 			loadData(this.index);
 			now = this.index;
-			console.log(now);
 			hiddenTab();
 			backJsList();
 		}

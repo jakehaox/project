@@ -539,22 +539,22 @@ var aNavItemData = [
 	[],
 	[
 		{
-			img:'images/service-list-4-8.jpg',
+			img:'images/service-list-2-1.jpg',
 			proName:'坚果 R1',
 			price:'￥2999.00起'
 		},
 		{
-			img:'images/service-list-4-8.jpg',
+			img:'images/service-list-2-1.jpg',
 			proName:'坚果 R1',
 			price:'￥2999.00起'
 		},
 		{
-			img:'images/service-list-4-8.jpg',
+			img:'images/service-list-2-1.jpg',
 			proName:'坚果 R1',
 			price:'￥2999.00起'
 		},
 		{
-			img:'images/service-list-4-8.jpg',
+			img:'images/service-list-2-1.jpg',
 			proName:'坚果 R1',
 			price:'￥2999.00'
 		}
